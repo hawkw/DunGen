@@ -6,6 +6,6 @@ package object dungen {
     y <- 0 to grid.length -1
     x <- 0 to grid(y).length -1
   } {
-    print(s"${grid(y)(x)} ${if (x == grid(y).length-1){"\n"}else{""}}")
+    print(s"${grid(y)(x)}\t${if (x == grid(y).length-1){"\n"}else{""}}")
   }
 }
