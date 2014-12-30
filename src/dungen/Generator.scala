@@ -1,5 +1,7 @@
 package dungen
 
+import dungen._
+
 import scala.annotation.tailrec
 
 /**
@@ -68,10 +70,11 @@ class Generator(
     }
     grid
   }
-
+}
+object Generator {
   /**
    * Crappy main method for debugging
    * @param argv
    */
-  def main(argv: Array[String]) = "\n" + prettyPrint(generate(50,50))
+  def main(argv: Array[String]): Unit = "\n" + prettyPrint(new Generator().generate(50,50))
 }
